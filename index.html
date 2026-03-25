@@ -24,58 +24,75 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <div class="d-flex align-items-center gap-2">
-            <img src="src/img/icona.svg" alt="" class="logoWeb" />
-            <h1 class="nombreWeb text-center">
-              fitness <span class="nombreWebSpan">online</span>
-            </h1>
+    <header class="header row">
+      <div class="divHeaderPrincipal col-12 col-lg-6">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <div class="d-flex align-items-center gap-2">
+              <img src="src/img/icona.svg" alt="" class="logoWeb" />
+              <h1 class="nombreWeb text-center">
+                fitness <span class="nombreWebSpan">online</span>
+              </h1>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon navbar-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">How To Start</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Feattures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Feedback</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon navbar-white"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >About Us</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">How To Start</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Feattures</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Feedback</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-            </ul>
-          </div>
+        </nav>
+        <div class="d-flex justify-content-center">
+          <h1 class="tituloWeb w-auto">Online Workout Personal Program</h1>
         </div>
-      </nav>
-      <div class="d-flex justify-content-center">
-        <h1 class="tituloWeb w-auto">Online Workout Personal Program</h1>
+        <div class="d-flex justify-content-center">
+          <p class="textoHeader text-center">
+            Start training online with your personal coach and become healthy
+          </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg botonHeader text-center"
+          >
+            Start Training
+          </button>
+        </div>
       </div>
-      <p>Start training online with your personal coach and become healthy</p>
-      <p>Start Training</p>
-      <img src="src/img/photoHeader.svg" alt="" />
+      <img
+        src="src/img/photoHeader.svg"
+        alt=""
+        class="imagenHeader col-12 col-lg-6 px-0 w-100"
+      />
     </header>
   </body>
 </html>

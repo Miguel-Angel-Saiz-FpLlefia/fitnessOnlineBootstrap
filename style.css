@@ -1,6 +1,10 @@
 .header {
   background-color: #7036ba;
   padding-top: 25px;
+  font-family: "Raleway", sans-serif;
+}
+
+.divHeaderPrincipal {
   padding-left: 18px;
 }
 
@@ -34,9 +38,29 @@
 }
 
 .tituloWeb {
-  max-width: 55%;
+  max-width: 85%;
   color: white;
   text-align: center;
   font-size: 40px;
-  font-family: "Raleway", sans-serif;
+}
+
+.textoHeader {
+  color: white;
+  font-size: 24px;
+  max-width: 91%;
+}
+
+.imagenHeader {
+  width: 100%;
+  padding-left: 0px;
+  max-height: 400px;
+}
+
+.botonHeader {
+  background-color: #00bfb4;
+  width: 261px;
+  height: 65px;
+  border-radius: 50px;
+  position: relative;
+  top: 30px;
 }
