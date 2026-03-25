@@ -1,3 +1,33 @@
 .header {
   background-color: #7036ba;
+  padding-top: 25px;
+  padding-left: 18px;
+}
+
+.logoWeb {
+  max-width: 30px;
+  width: 30px;
+  max-height: 30px;
+  height: 30px;
+}
+
+.nombreWeb {
+  color: white;
+}
+
+.nombreWebSpan {
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
