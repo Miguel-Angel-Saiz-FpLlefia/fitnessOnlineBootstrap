@@ -1,10 +1,16 @@
 :root {
-  --brand-purple: #6f44bf;
+  --brand-purple: #7036BA;
   --brand-purple-dark: #4a179a;
   --brand-teal: #00d1d1;
   --brand-teal-light: #5ff4fc;
   --brand-dark: #25005a;
   --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -13,7 +19,6 @@ body {
   color: #1d1a22;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 .material-symbols-outlined {
@@ -36,7 +41,7 @@ body {
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .hero-section {
     flex-direction: row;
   }
@@ -53,7 +58,7 @@ body {
   z-index: 10;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .hero-content {
     width: 50%;
     padding: 2rem 4rem;
@@ -73,7 +78,7 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .hero-image-container {
     width: 50%;
     min-height: 100vh;
@@ -289,15 +294,55 @@ body {
 .feedback-carousel .carousel-control-prev,
 .feedback-carousel .carousel-control-next {
   width: 10%;
-  opacity: 0.8;
+  opacity: 1;
   transition: all 0.3s ease;
+}
+
+.feedback-carousel .carousel-control-prev {
+  left: 0;
+}
+
+.feedback-carousel .carousel-control-next {
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .feedback-carousel .carousel-control-prev {
+    left: -1.5rem;
+  }
+
+  .feedback-carousel .carousel-control-next {
+    right: -1.5rem;
+  }
 }
 
 .feedback-carousel .carousel-control-prev-icon,
 .feedback-carousel .carousel-control-next-icon {
-  filter: invert(1) grayscale(100%) brightness(0);
+  background-image: none;
+  filter: none;
   width: 3rem;
   height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-carousel .carousel-control-prev-icon::before,
+.feedback-carousel .carousel-control-next-icon::before {
+  content: '';
+  width: 1.35rem;
+  height: 1.35rem;
+  border-top: 0.34rem solid #D9D1E3;
+  border-right: 0.34rem solid #D9D1E3;
+  border-radius: 0.18rem;
+}
+
+.feedback-carousel .carousel-control-next-icon::before {
+  transform: rotate(45deg);
+}
+
+.feedback-carousel .carousel-control-prev-icon::before {
+  transform: rotate(-135deg);
 }
 
 
@@ -348,5 +393,21 @@ footer a {
   
   .step-arrow {
     display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .feedback-carousel .carousel-control-prev,
+  .feedback-carousel .carousel-control-next {
+    width: 3.25rem;
+  }
+
+  #feedbackCarouselMobile .carousel-item .d-flex {
+    width: 100%;
+  }
+
+  #feedbackCarouselMobile .carousel-item .text-secondary {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 }
